@@ -10,7 +10,7 @@ export class OverviewCheckoutPage {
 
     constructor(page: Page) {
         this.page = page;
-        this.productName = this.page.locator(".inventory_item_name1")
+        this.productName = this.page.locator(".inventory_item_name")
         this.paymentInfo = this.page.locator("[data-test='payment-info-value']")
         this.shippingInfo = this.page.locator("[data-test='shipping-info-value']")
         this.totalPrice = this.page.locator("[data-test='total-label']")
